@@ -19,7 +19,7 @@ const AddMovie = () => {
 
   const fetchActors = async () => {
     try {
-        const response = await fetch('http://localhost:7000/api/actors');
+        const response = await fetch('https://imdb-clone-backend-okgd.onrender.com/api/actors');
         if (!response.ok) {
             const message = `An error occurred: ${response.status}`;
             throw new Error(message);
@@ -49,7 +49,7 @@ const AddMovie = () => {
 
     if (newActorName) {
       try {
-        const newActorResponse = await axios.post('http://localhost:7000/api/actors', {
+        const newActorResponse = await axios.post('https://imdb-clone-backend-okgd.onrender.com/api/actors', {
           name: newActorName,
         });
         movieData.actorNames = [...actorNamesArray, newActorName];
@@ -64,7 +64,7 @@ const AddMovie = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:7000/api/movies', movieData);
+      const response = await axios.post('https://imdb-clone-backend-okgd.onrender.com/api/movies', movieData);
       console.log('Movie added:', response.data);
       alert('Movie added successfully!');
       navigate('/'); 
