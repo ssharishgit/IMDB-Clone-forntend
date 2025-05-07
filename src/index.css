@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.title{
+  text-decoration: none;
+  color: initial;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.form-textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.form-heading {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.form-sub-heading {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
